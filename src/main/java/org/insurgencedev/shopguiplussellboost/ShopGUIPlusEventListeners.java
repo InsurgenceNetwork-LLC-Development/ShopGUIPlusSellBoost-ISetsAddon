@@ -49,7 +49,7 @@ public class ShopGUIPlusEventListeners implements Listener {
                     }
 
                     for (Boost boost : upgrade.getBoosts()) {
-                        if ("CURRENCY".equals(boost.getNamespace()) && boost.getType().equals("Money")) {
+                        if ("ShopGUIPlus".equals(boost.getNamespace()) && boost.getType().equals("Sell Boost")) {
                             double boostAmount = boost.getBOOST_SETTINGS().getDouble("Boost_Amount");
                             if (event.getShopAction().equals(ShopManager.ShopAction.SELL)) {
                                 event.setPrice(calcAmountToGive(event.getPrice(), boost, boostAmount));

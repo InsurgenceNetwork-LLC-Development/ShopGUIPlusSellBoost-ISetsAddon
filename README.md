@@ -8,8 +8,8 @@ items was $5, they will receive $17.5.
 
 ```yaml
 Boosts:
-  - Namespace: CURRENCY
-    Type: Money
+  - Namespace: ShopGUIPlus
+    Type: "Sell Boost"
     Percent: false
     Settings:
       Boost_Amount: 3.5
