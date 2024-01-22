@@ -6,11 +6,11 @@
 
     <groupId>org.insurgencedev</groupId>
     <artifactId>ShopGUIPlusSellBoost</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <properties>
-        <maven.compiler.source>14</maven.compiler.source>
-        <maven.compiler.target>14</maven.compiler.target>
+        <maven.compiler.source>16</maven.compiler.source>
+        <maven.compiler.target>16</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -37,7 +37,7 @@
             <artifactId>insurgencesets</artifactId>
             <version>LATEST</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/libs/ISets-0.0.7-beta.jar</systemPath>
+            <systemPath>${project.basedir}/src/main/libs/ISets-1.0.5-API.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.spigotmc</groupId>
