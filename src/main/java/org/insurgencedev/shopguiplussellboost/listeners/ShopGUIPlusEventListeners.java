@@ -50,7 +50,7 @@ public final class ShopGUIPlusEventListeners implements Listener {
             }
 
             for (Boost boost : upgrade.getBoosts()) {
-                if (boost.getNamespace().equals("ShopGUIPlus") && boost.getType().equals("Sell Boost")) {
+                if (boost.getNamespace().equals("ShopGUIPlus") && boost.getType().equals("Sell")) {
                     double boostAmount = boost.getBOOST_SETTINGS().getDouble("Boost_Amount");
                     if (event.getShopAction().equals(ShopManager.ShopAction.SELL)) {
                         totalAmount += calcAmount(event.getPrice(), boost.isPercent(), boostAmount);
