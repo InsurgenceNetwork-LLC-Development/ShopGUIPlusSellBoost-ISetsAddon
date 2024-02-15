@@ -18,6 +18,10 @@ public final class ShopGUIPlusEventListeners implements Listener {
 
     @EventHandler(ignoreCancelled = true)
     public void onTransaction(ShopPreTransactionEvent event) {
+        if (!event.getShopAction().equals(ShopManager.ShopAction.SELL)) {
+            return;
+        }
+
         Player player = event.getPlayer();
         IPlayer cache = ISetsAPI.getCache(player);
         double totalAmount = 0;
@@ -52,9 +56,7 @@ public final class ShopGUIPlusEventListeners implements Listener {
             for (Boost boost : upgrade.getBoosts()) {
                 if (boost.getNamespace().equals("ShopGUIPlus") && boost.getType().equals("Sell")) {
                     double boostAmount = boost.getBOOST_SETTINGS().getDouble("Boost_Amount");
-                    if (event.getShopAction().equals(ShopManager.ShopAction.SELL)) {
-                        totalAmount += calcAmount(event.getPrice(), boost.isPercent(), boostAmount);
-                    }
+                    totalAmount += calcAmount(event.getPrice(), boost.isPercent(), boostAmount);
                 }
             }
         }

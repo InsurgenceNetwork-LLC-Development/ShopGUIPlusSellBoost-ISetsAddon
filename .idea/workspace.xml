@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c30fd6a-771e-4127-a95a-d21170d440dd" name="Changes" comment="version update">
+    <list default="true" id="6c30fd6a-771e-4127-a95a-d21170d440dd" name="Changes" comment="minor changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/insurgencedev/shopguiplussellboost/listeners/ShopGUIPlusEventListeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/insurgencedev/shopguiplussellboost/listeners/ShopGUIPlusEventListeners.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705891197651</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="minor changes">
+      <option name="closed" value="true" />
+      <created>1706496944379</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706496944379</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -130,6 +139,7 @@
     <MESSAGE value="changed namespance and README.md" />
     <MESSAGE value="updated api and fixed boost giving wrong amounts" />
     <MESSAGE value="version update" />
-    <option name="LAST_COMMIT_MESSAGE" value="version update" />
+    <MESSAGE value="minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor changes" />
   </component>
 </project>
