@@ -18,7 +18,7 @@ public final class ShopGUIPlusEventListeners implements Listener {
 
     @EventHandler(ignoreCancelled = true)
     public void onTransaction(ShopPreTransactionEvent event) {
-        if (!event.getShopAction().equals(ShopManager.ShopAction.SELL)) {
+        if (event.getShopAction().equals(ShopManager.ShopAction.BUY)) {
             return;
         }
 
